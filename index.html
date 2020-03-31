@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Criativa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <section class="box-idea">
+            
+            <header class="title">
+                <a href="index.html"><img src="Logo.png" alt="Logo do site"></a>
+            </header>
+            
+            <main class="body">
+                <p>Ficar em casas em períodos longos, não deve ser nada fácil.</p>    
+                <p>Por isso, iremos catalogar ideias, <span>brincadeiras, jogos, filmes, livros, cursos, dicas</span> e tudo que for necessário para tornar esse momento mais interessante.</p>
+                <p>Comece clicando em ver ideias para ver as ideias cadastradas e contribua adicionando a sua.</p>
+            </main>
+            
+            <section class="button">
+                <button class="adicionar">+ Adicionar Ideia</button>
+                <button class="ver"><a href="ideias.html">Ver Ideias</a></button>
+            </section>
+            
+            <footer class="footer">
+                <p>Com 🧡 <span class="rocketseat">Rocketseat</span></p>
+            </footer>
+        </section>
+        
+        <section class="box-last-idea">
+            
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="imagem do curso de programação">
+                <div class="content">
+                    <h3>Curso de Programação</h3>
+                    <p>Estudo</p>
+                    <div class="description">Por isso, iremos catalogar ideias, <span>brincadeiras, jogos, filmes, livros, cursos, dicas</span> e tudo que for necessário para tornar esse momento mais interessante.</div>
+                    <div><a href="#">Ir para a Ideia</a></div>
+                </div>
+            </div>
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="imagem do curso de programação">
+                <div class="content">
+                    <h3>Curso de Programação</h3>
+                    <p>Estudo</p>
+                    <div class="description">Por isso, iremos catalogar ideias, <span>brincadeiras, jogos, filmes, livros, cursos, dicas</span> e tudo que for necessário para tornar esse momento mais interessante.</div>
+                    <div><a href="#">Ir para a Ideia</a></div>
+                </div>
+            </div>
+        </section>
+    </div>
+        
+        <!-- Modal -->
+    <div id="modal" class="hide">
+        <div class="content">
+            <h1>Nova Ideia</h1>
+            <form action="">
+               
+                <div class="input">
+                    <label for="title">Título</label>
+                    <input type="text" name="title">
+                </div>
+
+                <div class="input">
+                    <label for="category">Categoria</label>
+                    <input type="text" name="category">
+                </div>
+
+                <div class="input">
+                    <label for="image">Link da Imagem</label>
+                    <input type="url" name="image">
+                </div>
+
+                <div class="input">
+                    <label for="description">Digite uma descrição para essa ideia</label>
+                    <textarea name="description" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="input">
+                    <label for="link">Link da ideia</label>
+                    <input type="url" name="link">
+                </div>
+                
+                <button class="voltar" onclick="onOff()">Voltar</button>
+                <button class="salvar">Salvar</button>
+                                
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
